@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{178E1FAE-0BAE-4F37-9BC5-7FAF9A4B5306}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>du_an_ket_thuc_hoc_phan</RootNamespace>
+    <AssemblyName>du an ket thuc hoc phan</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class\checklama.cs" />
+    <Compile Include="class\dulieuxe.cs" />
+    <Compile Include="CS\CS4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS\CS4.Designer.cs">
+      <DependentUpon>CS4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS\CS1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS\CS1.Designer.cs">
+      <DependentUpon>CS1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS\CS2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS\CS2.Designer.cs">
+      <DependentUpon>CS2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS\CS3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS\CS3.Designer.cs">
+      <DependentUpon>CS3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS\CSIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS\CSIP.Designer.cs">
+      <DependentUpon>CSIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\DNIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\DNIP.Designer.cs">
+      <DependentUpon>DNIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\hdip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\hdip.Designer.cs">
+      <DependentUpon>hdip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\KHIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\KHIP.Designer.cs">
+      <DependentUpon>KHIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS\mainCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS\mainCS.Designer.cs">
+      <DependentUpon>mainCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class\nguoidungcs.cs" />
+    <Compile Include="class\nhapdulieu.cs" />
+    <Compile Include="class\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="class\qlsl.cs" />
+    <Compile Include="CS %28 CS phu %29\suliitaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\suliitaikhoan.Designer.cs">
+      <DependentUpon>suliitaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\themxe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS %28 CS phu %29\themxe.Designer.cs">
+      <DependentUpon>themxe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CS %28 CS phu %29\themxe.resx">
+      <DependentUpon>themxe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS\CS4.resx">
+      <DependentUpon>CS4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS\CS1.resx">
+      <DependentUpon>CS1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS\CS2.resx">
+      <DependentUpon>CS2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS\CS3.resx">
+      <DependentUpon>CS3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS\CSIP.resx">
+      <DependentUpon>CSIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS %28 CS phu %29\DNIP.resx">
+      <DependentUpon>DNIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS %28 CS phu %29\hdip.resx">
+      <DependentUpon>hdip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS %28 CS phu %29\KHIP.resx">
+      <DependentUpon>KHIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS\mainCS.resx">
+      <DependentUpon>mainCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="CS %28 CS phu %29\suliitaikhoan.resx">
+      <DependentUpon>suliitaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1_20260915165252.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daoloat.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
